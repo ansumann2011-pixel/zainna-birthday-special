@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Zainna 💜</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+  background: radial-gradient(circle at top, #351052, #100817, #030205);
+  overflow-x: hidden;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  width: 90%;
+  max-width: 420px;
+  margin: 55px auto;
+  padding: 28px 20px;
+  border: 1px solid #a855f7;
+  border-radius: 25px;
+  background: rgba(20, 8, 35, 0.88);
+  box-shadow: 0 0 30px #8a2be255;
+}
+
+.small {
+  color: #d8b4fe;
+  letter-spacing: 3px;
+  font-size: 11px;
+}
+
+h1 {
+  color: #e9d5ff;
+  text-shadow: 0 0 20px #a855f7;
+  font-size: 32px;
+}
+
+p {
+  color: #eadcf8;
+  line-height: 1.8;
+}
+
+.photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #c084fc;
+  box-shadow: 0 0 25px #a855f7;
+  margin: 15px 0;
+}
+
+button {
+  padding: 14px 20px;
+  border: 1px solid #e9d5ff;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #7026bc, #b04cff);
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 0 20px #942cff55;
+}
+
+#surprise {
+  display: none;
+  animation: appear 1.5s ease;
+}
+
+#countdown {
+  color: #d8b4fe;
+  font-size: 20px;
+}
+
+.heart {
+  position: fixed;
+  bottom: -40px;
+  z-index: 1;
+  pointer-events: none;
+  animation: floatUp 7s linear forwards;
+}
+
+.star {
+  position: fixed;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 0 8px #c084fc;
+  animation: twinkle 2s infinite alternate;
+}
+
+@keyframes floatUp {
+  to {
+    transform: translateY(-110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes twinkle {
+  from { opacity: 0.2; }
+  to { opacity: 1; }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="small">✦ A LITTLE SURPRISE FOR YOU ✦</div>
+
+  <h1>Happy Birthday,<br>Zainna 💜</h1>
+
+  <p>
+    Someone special deserves something special. 🌌
+  </p>
+
+  <!-- Replace the image URL with your photo link -->
+  <img
+    class="photo"
+    src="YOUR PHOTO URL"
+    alt="A special birthday photo"
+  >
+
+  <h2 id="countdown">Loading countdown...</h2>
+
+  <p>Until your special day 🎂</p>
+
+  <button onclick="openSurprise()">
+    OPEN YOUR SURPRISE 💌
+  </button>
+
+  <div id="surprise">
+
+    <hr style="border-color:#a855f7; margin:25px 0;">
+
+    <h2 style="color:#d8b4fe;">
+      Hey Zainnaaa! 🖤💜
+    </h2>
+
+    <p>
+      Happy Birthday, Zainab! 🎂✨
+      <br><br>
+
+      I'm genuinely glad to have you in my life.
+      You are a special person, and I hope your
+      birthday brings you endless happiness.
+      <br><br>
+
+      Even though we're in different cities,
+      I'm always wishing the best for you.
+      May your days be filled with smiles,
+      beautiful memories, and success. 🌌
+      <br><br>
+
+      Never stop being yourself.
+      Keep smiling, Zainnaaa! 💜
+      <br><br>
+
+      <b>HAPPY BIRTHDAY, MY ZAINNA! 🫶🏻</b>
+    </p>
+
+    <div style="font-size:35px;">🖤💜✨</div>
+
+  </div>
+
+</div>
+
+<script>
+function updateCountdown() {
+  const now = new Date();
+  let year = now.getFullYear();
+
+  let birthday = new Date(year, 10, 1
